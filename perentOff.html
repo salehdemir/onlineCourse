@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let items = [250,400,300,500,100]
+        // let newItems =[];
+        // for (let item of items){
+        //     let discountedPrice = item * 0.9;
+        //     // let item = offer - item;
+        //     newItems.push(discountedPrice)
+        // }
+        // console.log(newItems)
+
+        // OR
+
+        let items = [250,400,300,500,100]
+        for ( let item = 0; item < items.length; item++ ){
+            let offer = items[item] / 10;
+            items[item] -= offer
+        }
+        console.log(items)
+    </script>
+</body>
+</html>
