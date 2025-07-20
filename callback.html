@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function sum (a , b){
+        console.log(a + b)
+    }
+    function calculator (a , b, sumcallback){
+        sumcallback(a, b)
+    }
+    
+    // calculator( 6, 8, (a,b) => {
+    //     console.log(a + b);
+    // })
+  // OR
+    calculator(8,7,sum)
+
+
+
+    // practice code of call back
+    // function getData(dataId,getNextData){
+    //     setTimeout(() => {
+    //         console.log(dataId)
+    //         if(getNextData){
+    //         getNextData();
+    //         }
+    //     },2000)
+    // }
+
+    // getData(5, () => {
+    //     getData(2 , () => {
+    //         getData(6)
+    //     });
+    // });
+</script>
+</body>
+</html>
